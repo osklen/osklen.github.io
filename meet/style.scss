@@ -1,0 +1,359 @@
+@import url(https://fonts.googleapis.com/css?family=Red+Hat+Display:regular,italic,500,500italic,700,700italic,900,900italic);
+// Färger
+$clr1:#4d96a9;
+$clr2:#855FB1;
+$clr3:#28283D;
+$clr4:#87879D;
+$clr5:#8FE3F9;
+$clr6:#D9B8FF;
+$clr7:#FAFAFA;
+$clr8:#71C0D4;
+
+*,html{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Red Hat Display';
+}
+.container{
+    //background-color: green;
+    width:100%;
+    height:auto;
+    .logowrapper{
+        text-align: center;
+        padding-top:48px;
+        padding-bottom:54px;
+        outline: none;
+    }
+    .herowrapper{
+        display: flex;
+        padding-bottom:48px;
+        @media(min-width:1440px){
+            display: flex;
+            justify-content: space-between;
+        }
+        .heroleft{
+            width:199px;
+            height:153px;
+            @media(min-width:768px){
+                width:394px;
+                height:303px;
+            }
+           
+            img{
+                width:100%;
+            }
+        }
+        .heroright{
+            width:199px;
+            height:153px;
+            @media(min-width:768px){
+                width:394px;
+                height:303px;
+            }
+            img{
+                width:100%;
+            }
+        }
+    }
+    .title{
+        font-size:40px;
+        text-align: center;
+        line-height:48px;
+        color:$clr3;
+        padding-bottom:24px;
+        @media(min-width:768px){
+            font-size: 48px;
+        }
+        @media(min-width:1440px){
+           position: absolute;
+           top:224px;
+           left:37%;
+           font-size: 64px;
+           line-height:64px;
+        }
+    }
+    .textcentered{
+        text-align: center;
+        padding-bottom:32px;
+        font-size: 16px;
+        line-height: 26px;
+        //margin: 0px 24px;
+        @media(min-width:768px){
+            font-size: 16px;
+            
+        }
+        @media(min-width:1440px){
+            position: absolute;
+            top:348px;
+            left:37%;
+         }    
+    }
+    .btnwrapper{
+        display:inline-block;
+        padding:16px 96px;
+        @media(min-width:768px){
+            text-align:center;
+            display:block;
+        }
+        @media(min-width:1440px){
+            position: absolute;
+            top:424px;
+            left:32%;
+            
+         }    
+    
+    .downloadbtn{
+        width:193px; 
+        height:58px;
+        font-size: 16px;
+        border-radius:50px;
+        outline: none;
+        border:none;
+        background-color: $clr1;
+        color: $clr7;
+        cursor:pointer;
+        &:hover{
+            background-color: $clr8;  
+        }
+        .downloadtxt-strong{
+            font-weight:700;
+            display: inline;
+            
+        }
+        .versiontxt{
+            display: inline;
+            margin:0px 4px;
+            font-weight: 700;
+            color:$clr5;
+        }
+    }
+    
+    .btn2{
+        width:139px; 
+        height:58px;
+        font-size: 16px;
+        margin:24px;
+        border-radius:50px;
+        outline: none;
+        border:none;
+        background-color: $clr2;
+        color: $clr7;
+        font-weight: 700;
+        cursor:pointer;
+        &:hover{
+          background-color: $clr6;  
+        }
+    }
+}
+    .symbol1{
+        text-align: center;
+        padding-bottom:64px;
+        @media(min-width:1440px){
+            padding-top:64px ;
+        }
+    }
+    .collage{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap:24px;
+        padding-bottom:64px;
+        @media(min-width:768px){
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        @media(min-width:1440px){
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            
+            margin:0px 472px;
+        }
+        img{
+            width:151px;
+            height:143px;
+            border-radius:8px;
+            justify-self: center;
+        }
+    }
+    .title2{
+        line-height: 26px;
+        letter-spacing:4px;
+        color:$clr1;
+        text-align: center;
+        padding-bottom:24px;
+        font-size: 16px;
+    }
+    .title3{
+        font-size: 32px;
+        line-height: 36px;
+        text-align: center;
+        padding-bottom:32px;
+        @media(min-width:768px){
+            font-size:40px;
+            line-height:44px;
+         
+        }
+    }
+    .textcentered2{
+        text-align: center;
+        margin-bottom:88px;
+       
+        line-height: 26px;
+        @media(min-width:768px){
+            font-size:16px;
+            line-height:26px;
+            margin:0px 97px;
+            margin-bottom:88px;
+        }
+        @media(min-width:1440px){
+            font-size:18px;
+            line-height:26px;
+            margin:0px 450px;
+            margin-bottom:88px;
+        }
+
+    }
+    .footersymbolwrapper{
+         position: absolute;
+         top:1580px;
+         left:45%;
+         z-index:2;
+            @media(min-width:768px){
+                position: absolute;
+                top:1560px;
+            }   
+        }
+    .symbol2{
+        //text-align: center;
+        margin-top:80px;
+        
+        @media(min-width:768px){
+            margin: 0px 8px;
+        }
+        @media(min-width:1440px){
+            margin: -308px 48px;
+        }    
+    }
+
+    footer{
+        width:375px;
+        height:428px;
+        position: relative;
+        background-color: #4D96A9;
+        bottom:-64px;
+        @media(min-width:768px){
+            width:768px;
+            height:428px;
+        }
+        @media(min-width:1440px){
+            width:100%;
+            height:308px;
+        }
+        &::before{
+            content:"";
+            background-image: url(/img/Mobile/image-footer.jpg);
+            background-size: cover;
+            
+            opacity: 0.1;
+            top:0; left:0; bottom:0; right:0;
+            position: absolute;
+            z-index:1;
+            @media(min-width:768px){
+                background-image: url(/img/Tablet/image-footer.jpg);
+            }
+            @media(min-width:1440px){
+                background-image: url(/img/Desktop/image-footer.jpg);
+            }
+        }
+        img{
+            width:100%;   
+        }
+        .footerwrapper{
+            position: absolute;
+            z-index:2;
+            text-align: center;
+            color:#fff;
+            @media(min-width:768px){
+                margin-top:64px;
+            }
+            @media(min-width:1440px){
+                display:flex;
+                text-align:left ;
+            }
+        }
+        .footertitle{
+            line-height: 36px;
+            margin-bottom:24px;
+            margin-top:92px;
+            font-size: 32px;
+            @media(min-width:768px){
+                font-size:40px;
+                line-height: 44px;
+                margin:56px 155px;
+            }
+           
+        }
+        .footertxt{
+            line-height: 26px;
+            margin-bottom:32px;
+            font-size: 18px;
+            @media(min-width:768px){
+                font-size:18px;
+                line-height: 26px;
+                margin:32px 97px;
+            }
+            @media(min-width:1440px){
+                margin:56px 8px;
+              
+            }
+        }
+        .footerdownloadbtn{
+            width:193px; 
+            height:58px;
+            border-radius:50px;
+            outline: none;
+            border:none;
+            background-color: $clr2;
+            color: $clr7;
+            font-weight: 700;
+            font-size:16px;
+         
+            cursor:pointer;
+            &:hover{
+                background-color: #B18BDD;  
+            }
+            @media(min-width:1440px){
+                margin:56px 164px;
+                padding:1.25rem;
+            }
+            .downloadtxt-strong{
+                font-weight:700;
+                display: inline;
+                
+            }
+            .versiontxt{
+                display: inline;
+                margin:0px 4px;
+                font-weight: 700;
+                color:#D9B8FF;
+            }
+        }
+        .attribution{
+            position:absolute;
+            bottom:0px;
+            font-size:14px;
+            
+            margin:0px 8px;
+            @media(min-width:768px){
+                margin:0px 156px;
+                font-size: 16px;
+            }
+            @media(min-width:1440px){
+                margin:0px 598px;
+                font-size: 16px;
+            }
+        }
+    }
+}
